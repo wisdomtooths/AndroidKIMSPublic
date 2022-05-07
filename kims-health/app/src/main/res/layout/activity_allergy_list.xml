@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:id="@+id/toolbar"
+          app:cardElevation="20dp"
+          android:layout_height="wrap_content">
+          <RelativeLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp">
+
+              <ImageView
+                  android:id="@+id/icon_back"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:padding="10dp"
+                  android:src="@drawable/ic_search_red"
+                  android:visibility="gone" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:text="Allergy Information"
+                  android:textColor="@color/black"
+                  android:textSize="20dp"
+                  android:textStyle="bold" />
+
+
+          </RelativeLayout>
+      </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_allergy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical"
+            tools:listitem="@layout/item_allergy"></androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorMain"
+                android:src="@drawable/logo_red" />
+
+            <ImageView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/logo_text"
+                android:text="Inside Android"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

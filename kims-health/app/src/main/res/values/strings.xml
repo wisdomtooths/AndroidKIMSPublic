@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">KIMS HEALTH</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_appointment">Appointment</string>
+    <string name="nav_pharmacy">Pharmacy</string>
+    <string name="nav_account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="token_username">kimsMobileApp</string>
+    <string name="token_password">!Lov3MyPiano</string>
+    <string name="title_activity_family_member_appointment">FamilyMemberAppointment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

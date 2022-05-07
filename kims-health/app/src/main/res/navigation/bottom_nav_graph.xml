@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/botton_nav_home">
+
+    <fragment
+        android:id="@+id/bottom_nav_account"
+        android:name="com.example.kimshealth.ui.fragment.AccountFragment"
+        android:label="AccountFragment" />
+    <fragment
+        android:id="@+id/bottom_nav_appointment"
+        android:name="com.example.kimshealth.ui.fragment.AppointmentFragment"
+        android:label="AppointmentFragment" />
+    <fragment
+        android:id="@+id/botton_nav_home"
+        android:name="com.example.kimshealth.ui.fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/botton_nav_report"
+        android:name="com.example.kimshealth.ui.fragment.ReportFragment"
+        android:label="ReportFragment" />
+
+    <fragment
+        android:id="@+id/bottom_nav_pharmacy"
+        android:name="com.example.kimshealth.ui.fragment.PharmacyFragment"
+        android:label="PharmacyFragment" />
+
+</navigation>

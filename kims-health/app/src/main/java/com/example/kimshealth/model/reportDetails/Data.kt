@@ -1,0 +1,32 @@
+package com.example.kimshealth.model.reportDetails
+
+data class Data(
+    val AGE1: String,
+    val ALL_SPECIMEN_NAMES: Any,
+    val AUTHORIZATION_DATE: Any,
+    val BILL_DATE: String,
+    val BILL_NO: String,
+    val COMPARISON_OPERATOR: String,
+    val CPR_NO: String,
+    val DESIGNATION: Any,
+    val DIGITAL_SIGNATURE: Any,
+    val DOB: String,
+    val EMPLOYEE_NAME: String,
+    val H_EMP_QLFN: Any,
+    val INV_PAT_BILLING_ID: String,
+    val INV_PAT_TEST_RESULT_ID_1: String,
+    val MAX_VALUE: Any,
+    val MIN_VALUE: Any,
+    val MRNO: String,
+    val PATIENT_NAME: String,
+    val PROVIDER_NAME: String,
+    val RANGE_DESCRIPTION: Any,
+    val RESULT: Any,
+    val RESULT_PATH: Any,
+    val RESULT_TYPE: Any,
+    val RESULT_UNIT: Any,
+    val SAMPLE_COLLECTION_DATE: String,
+    val SEX: String,
+    val TESTNAME: String,
+    val VALUE: Any
+)

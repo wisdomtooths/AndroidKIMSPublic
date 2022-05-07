@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/backgroundMain"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.activity.BookAppointmentActivity">
+
+           <com.google.android.material.card.MaterialCardView
+               android:id="@+id/toolbar"
+               android:layout_width="match_parent"
+               app:cardElevation="20dp"
+               android:layout_height="wrap_content">
+               <RelativeLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp">
+
+                   <ImageView
+                       android:id="@+id/icon_back"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:visibility="gone"
+                       android:src="@drawable/ic_arrow_left" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:text="Book an Appointment"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:padding="10dp"
+                       android:visibility="gone"
+                       android:src="@drawable/ic_filter_red" />
+
+               </RelativeLayout>
+           </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/lay_selected_dr_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar"
+                android:background="@color/backgroundMain"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white"
+                        android:textColorHint="@color/colorMain"
+                        app:boxBackgroundColor="@color/colorMain"
+                        app:boxStrokeColor="@color/colorMain"
+                        app:boxStrokeWidth="0dp"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/colorMain"
+                        app:startIconDrawable="@drawable/ic_location_on"
+                        app:startIconTint="@color/colorMain">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:background="#00000000"
+                            android:backgroundTint="@color/white"
+                            android:enabled="false"
+                            android:hint="RBH"
+                            android:inputType="none"
+                            android:text="KIMMS RBH"
+                            android:textColor="@color/colorMain"
+                            android:textSize="10dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/pic"
+                        app:civ_border_color="@color/colorMain"
+                        app:civ_border_width="0dp" />
+                </RelativeLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:id="@+id/tv_search_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="16dp"
+                            android:paddingLeft="20dp"
+                            android:textAlignment="textStart"
+                            android:hint="Search"
+                            android:drawableRight="@drawable/ic_search_red"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="@color/white"
+                            app:boxStrokeWidth="0dp"
+                            app:boxStrokeWidthFocused="0dp" />
+                    </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorMainsub"
+                    app:cardCornerRadius="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv_typespeciality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_rounded"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:shape="oval"
+                            android:text="By Speciality"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_typedoctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="By Doctor"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/rv_dr_by_speciality"
+                    android:background="@color/backgroundMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <!--            <include-->
+<!--                android:id="@+id/lay_dr_by_specility"-->
+<!--                layout="@layout/item_search_dr_by_speciality"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/lay_selected_dr_type" />-->
+
+
+
+            <LinearLayout
+                android:id="@+id/lay_dr_by_name"
+                android:visibility="gone"
+                android:layout_below="@id/lay_selected_dr_type"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/item_dr_fragment" />
+
+                <include layout="@layout/item_dr_fragment" />
+
+                <include layout="@layout/item_dr_fragment" />
+
+                <include layout="@layout/item_dr_fragment" />
+
+                <include layout="@layout/item_dr_fragment" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

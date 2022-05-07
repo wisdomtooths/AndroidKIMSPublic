@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lay_card"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:layout_height="160dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_image_icon"
+                android:layout_width="80dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_orthopedic"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:text="Orthopedic"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:maxEms="12"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:lineSpacingExtra="1sp"
+                android:text="Fractures,Muscle \nPains,Body Pains"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
+
+<!--<LinearLayout-->
+<!--    android:orientation="vertical"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:padding="10dp"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:weightSum="2"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:backgroundTint="@color/colorMain"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_cardiology"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Cardiology"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Heart attack,\nChest pain,Heart Diseases"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_orthopedic"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Orthopedic"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:weightSum="2"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_dermatology"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Dermatology"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_general_physician"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="General Physician"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:weightSum="2"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_noun_stomach"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Gastroenterology"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_bariatrics"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Bariatrics"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:weightSum="2"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_dentist"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Dentists"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_height="160dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:src="@drawable/ic_paediatrics"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:text="Paediatrics"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="Fractures,Muscle \nPains,Body Pains"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->

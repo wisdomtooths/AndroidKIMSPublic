@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Login"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/lay_sendOtp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_banner"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Welcome KIMSHEALTH"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Mobile Number"
+                        android:textSize="12dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/rounded_shape"
+                        android:layout_height="40dp">
+
+                        <EditText
+                            android:id="@+id/et_coutry_code"
+                            android:background="@color/float_transparent"
+                            android:layout_width="80dp"
+                            android:padding="2dp"
+                            android:text="Select"
+                            android:visibility="gone"
+                            android:editable="false"
+                            android:inputType="none"
+                            android:textSize="14dp"
+                            android:gravity="center"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/ic_drop_down"
+                            android:layout_height="match_parent"
+                            />
+
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            android:id="@+id/et_ps_countryCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:hint="Select"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="14dp"
+                            app:spinner_arrow_tint="@color/black"
+                            app:spinner_arrow_gravity="end"
+                            app:spinner_arrow_padding="8dp"
+                            app:spinner_divider_show="true"
+                            app:spinner_divider_size="0.4dp"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@color/white"
+                            app:spinner_popup_elevation="14dp" />
+                        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                            android:id="@+id/phone_number_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="  Mobile Number"
+                            android:maxLength="8"
+                            android:background="@drawable/rounded_shape"
+                            android:backgroundTint="@null"
+                            android:inputType="phone" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_sendOtp"
+                        android:layout_width="300dp"
+                        android:text="Send OTP"
+                        app:cornerRadius="5dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/colorMain"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_validateOtp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_number_confirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="Code sent to +968 9876543210"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_editNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@id/tv_number_confirm"
+                        android:text="Edit"
+                        android:textColor="@android:color/holo_blue_bright" />
+
+                </RelativeLayout>
+
+                <com.goodiebag.pinview.Pinview
+                    android:id="@+id/pinview"
+                    app:pinBackground="@drawable/rounded_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:pinWidth="40dp"
+                    app:pinHeight="40dp"
+                    app:pinLength="6"
+                    app:cursorVisible="false"
+                    app:forceKeyboard="true"
+                    app:hint="0"
+                    app:inputType="number"
+                    app:password="false"/>
+
+                <TextView
+                    android:id="@+id/tv_clear"
+                    android:layout_width="wrap_content"
+                    android:text="Clear"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_validate"
+                    android:layout_width="300dp"
+                    android:backgroundTint="@color/colorMain"
+                    android:text="Validate"
+                    app:cornerRadius="5dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
